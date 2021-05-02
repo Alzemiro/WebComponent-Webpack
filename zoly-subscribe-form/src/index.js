@@ -13,8 +13,4 @@ import ZolySubscribeForm from './direflow-components/zoly-subscribe-form';
 
 ZolySubscribeForm.then((element) => {
 
-  /**
-   * Access DOM node when it's mounted
-   */
-  console.log('zoly-subscribe-form is mounted on the DOM', element);
 });
