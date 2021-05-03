@@ -1,11 +1,11 @@
 .container {
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
 }
 .font {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .btn {
-    padding: 0.8rem;
+    padding: 0.5rem;
     color: #57585A;
     border: 1px solid black;
     box-sizing: border-box;
