@@ -1,19 +1,11 @@
 import { DireflowComponent } from 'direflow-component';
-import App from './App';
+import HeadFormComponent from './components/head-form/head-form-component';
+
 
 export default DireflowComponent.create({
-  component: App,
+  component: HeadFormComponent,
   configuration: {
-    tagname: 'zoly-subscribe-form',
-  },
-  plugins: [
-    {
-      name: 'font-loader',
-      options: {
-        google: {
-          families: ['Advent Pro', 'Noto Sans JP'],
-        },
-      },
-    },
-  ],
+    tagname: 'zoly-head-form-component',
+    useShadow: true
+  } 
 });

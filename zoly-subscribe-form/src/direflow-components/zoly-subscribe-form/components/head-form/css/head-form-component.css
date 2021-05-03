@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.font {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;    
+}
+
+.font.text {
+    color: #F05A22;
+}
+
+.btn-container {
+    display: flex;
+    justify-self: center;
+    align-self: space-between;
+}
+
+.btn {
+    position: relative;
+    color: #57585A;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.btn:hover{
+    border: 1px solid #F05A22;
+    background-color: #F05A22;
+    color: white;
+}
