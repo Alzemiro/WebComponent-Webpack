@@ -11,10 +11,10 @@ const HeadFormComponent = () => {
           <h4 className="font text">{"Como você gostaria de ingressar na Anhanguera?"}</h4>
         </div>
         <div className="btn-container">
-          <div>
+          <div className="item">
             <button className="btn font" type="button">{"VESTIBULAR ONLINE"}</button>
           </div>
-          <div>
+          <div className="item">
             <button className="btn font" type="button">{"NOTA DO ENEM"}</button>
           </div>
         </div>
