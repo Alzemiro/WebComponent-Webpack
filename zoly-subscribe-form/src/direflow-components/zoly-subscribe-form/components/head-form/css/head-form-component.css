@@ -3,13 +3,14 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
+    margin-bottom: auto;
 }
 .font {
-    font-size: 0.8rem;
     font-weight: bold;
 }
 
 .font.text {
+    font-size: 1.2rem;
     color: #F05A22;
 }
 
@@ -19,7 +20,7 @@
 
 .item {
     flex:1 1 auto;
-    margin-left:1rem;
+    margin-left:0.5rem;
 }
 
 .item:nth-child(1){
