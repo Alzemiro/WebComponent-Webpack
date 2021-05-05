@@ -1,0 +1,20 @@
+.btn{
+    padding: 0.8rem 2.5rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: "transparent"
+}
+
+.btn:hover {
+    border: 1px solid #F05A22;
+    background-color: #F05A22;
+    color: white;
+}
+
+.btn__active {
+    border: 1px solid #F05A22;
+    background-color: #F05A22;
+    color: white;
+}
+

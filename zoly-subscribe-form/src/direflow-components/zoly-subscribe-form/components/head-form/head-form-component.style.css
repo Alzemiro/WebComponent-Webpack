@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+.font {
+    font-weight: bold;
+}
+
+.font.text {
+    font-size: 1.2rem;
+    color: #F05A22;
+}
+
+.btn__container {
+    display: flex;
+}
+
+
+.item {
+    margin-left: 0.5rem;
+}
+
+.item:nth-child(1) {
+    margin-left: 0
+}

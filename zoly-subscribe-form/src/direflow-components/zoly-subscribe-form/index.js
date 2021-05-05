@@ -1,11 +1,26 @@
 import { DireflowComponent } from 'direflow-component';
-import HeadFormComponent from './components/head-form/head-form-component';
+import HeadFormWebComponent from './WebComponents/HeadForm';
 
 
 export default DireflowComponent.create({
-  component: HeadFormComponent,
+  component: HeadFormWebComponent,
   configuration: {
     tagname: 'zoly-head-form-component',
-    useShadow: true
-  } 
+    useShadow: true,
+    plugins: [
+      {
+        name: 'material-ui'
+      },
+      {
+        name: 'polyfill-loader',
+        options: {
+          use: {
+            sd: false,
+            ce: false,
+            adapter: false
+          }
+        }
+      }
+    ]
+  }
 });

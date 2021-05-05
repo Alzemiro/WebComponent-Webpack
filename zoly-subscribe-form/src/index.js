@@ -11,6 +11,7 @@
 
 import ZolySubscribeForm from './direflow-components/zoly-subscribe-form';
 
+// eslint-disable-next-line no-unused-vars
 ZolySubscribeForm.then((element) => {
 
 });

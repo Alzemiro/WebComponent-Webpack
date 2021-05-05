@@ -9,8 +9,8 @@
  * this file can be safely deleted.
  */
 
-import HeadFormComponent from './direflow-components/zoly-subscribe-form/components/head-form/head-form-component';
+import HeadFormWebComponent from './direflow-components/zoly-subscribe-form/WebComponents/HeadForm'
 
-export { 
-  HeadFormComponent,
+export {
+  HeadFormWebComponent,
 };
