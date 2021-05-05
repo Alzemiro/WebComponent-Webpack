@@ -1,38 +1,28 @@
 import React from "react";
-import { Backdrop, Fade, Typography, Dialog } from "@material-ui/core"
 import { Styled } from "direflow-component";
-import styles from './tooltip-enem-component.style.css'
+import styles from "./tooltip-enem-component.style.css";
 
 // eslint-disable-next-line react/prop-types
 const TooltipEnem = ({ open, onClose }) => {
+  const showHideClassName = open ? `modal display-block` : `modal display-none`;
   return (
     <Styled styles={styles}>
-      <Dialog
-        aria-labelledby="transition-modal-title"
-        aria-describedby="transition-modal-description"
-        className="modal"
-        open={open}
-        onClose={onClose}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 300,
-        }}
-        >
-        <Fade in={open}>
-          <div className="paper">
-            <Typography className="title">Ei, você Sabia Disso?</Typography>
-            <Typography className="text">
+      <div className={showHideClassName}>
+        <section className="modal-main">
+        <div className="paper">
+            <div className="title">Ei, você Sabia Disso?</div>
+            <div className="text">
               Você pode usar sua <strong>nota do Enem</strong> se fez a prova
               nos <strong>últimos dez anos</strong>. Se você optar pela
               inscrição através da nota do Enem,{" "}
               <strong>não precisará realizar o vestibular tradicional.</strong>
-            </Typography>
+            </div>
           </div>
-        </Fade>
-      </Dialog>
+         <a href="#" onClick={onClose} className="btn__close"></a>
+        </section>
+      </div>
     </Styled>
   );
 };
 
-export default TooltipEnem
+export default TooltipEnem;

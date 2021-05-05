@@ -40,17 +40,15 @@ const HeadFormComponent = () => {
           </h4>
         </div>
         <div className="btn__container">
-          <div>
+          <div className="item">
             <AnhangueraButton
-              style="item"
               clicked={false}
               text="VESTIBULAR ONLINE"
               onClick={handleVestibularClick}
               />
           </div>
-          <div>
+          <div className="item">
             <AnhangueraButton
-              style="item"
               clicked={true}
               text="NOTA ENEM"
               onClick={() => {
@@ -60,7 +58,9 @@ const HeadFormComponent = () => {
               />
           </div>
         </div>
-        <TooltipEnem open={openDialog} onClose={handleClose} />
+        <div className="modal__position">
+          <TooltipEnem open={openDialog} onClose={handleClose} />
+        </div>
       </div>
     </Styled>
   );

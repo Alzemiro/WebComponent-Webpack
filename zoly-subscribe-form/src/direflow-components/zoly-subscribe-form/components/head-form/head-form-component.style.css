@@ -11,7 +11,7 @@
 }
 
 .font.text {
-    font-size: 1.2rem;
+    font-size: 14px;
     color: #F05A22;
 }
 
@@ -19,11 +19,17 @@
     display: flex;
 }
 
-
 .item {
-    margin-left: 0.5rem;
+    margin-left: 14px;
 }
 
 .item:nth-child(1) {
-    margin-left: 0
+    margin-left: 0;
+}
+
+.modal__position{
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+
 }
