@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TooltipEnem from "../tootip-enem";
 import styles from "./head-form-component.style.css";
 import { Styled } from "direflow-component";
+import TooltipGatilho from "../tooltip-gatilho";
 
 const HeadFormComponent = () => {
   const [btnEnemClick, setEnemClick] = useState(false);
@@ -26,14 +27,17 @@ const HeadFormComponent = () => {
         </div>
         <div className="btn__container">
           <input
+            name="btn_radio"
             className="btn__item"
-            type="button"
+            type="radio"
             value="VESTIBULAR ONLINE"
           />
           <input
+            name="btn_radio"
             className="btn__item"
-            type="button"
+            type="radio"
             value="NOTA ENEM"
+            id="enem"
             onClick={handleEnemClick}
           />
         </div>
