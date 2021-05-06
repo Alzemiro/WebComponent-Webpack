@@ -1,5 +1,5 @@
 .modal__enem {
-  width: 12.5rem;
+  width: 15.5rem;
   height: 10rem;
   filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.25));
 }
@@ -15,7 +15,7 @@
   align-self: flex-start;
   color: #f05a22;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding: 11px 74px 7px 17px;
 }
 

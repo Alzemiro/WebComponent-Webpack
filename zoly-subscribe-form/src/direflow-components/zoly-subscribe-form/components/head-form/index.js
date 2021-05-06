@@ -7,12 +7,17 @@ import TooltipGatilho from "../tooltip-gatilho";
 const HeadFormComponent = () => {
   const [btnEnemClick, setEnemClick] = useState(false);
   const [openDialog, setOpenDialog] = useState(false);
+  console.log(btnEnemClick);
 
   const handleClose = () => setOpenDialog(false);
 
   const handleEnemClick = () => {
     setOpenDialog(true);
     setEnemClick(true);
+  };
+
+  const handleVestibularClick = () => {
+    setEnemClick(false);
   };
 
   return (
@@ -26,20 +31,21 @@ const HeadFormComponent = () => {
           </div>
         </div>
         <div className="btn__container">
-          <input
-            name="btn_radio"
+          <button
+            aria-checked={!btnEnemClick}
             className="btn__item"
-            type="radio"
+            type="button"
             value="VESTIBULAR ONLINE"
-          />
-          <input
-            name="btn_radio"
-            className="btn__item"
-            type="radio"
-            value="NOTA ENEM"
+            onClick={handleVestibularClick}
+          >VESTIBULAR ONLINE</button>
+          <button
+            aria-checked={btnEnemClick}
+            className="btn__item enem"
+            type="button"
             id="enem"
+            value="NOTA ENEM"
             onClick={handleEnemClick}
-          />
+          >NOTA ENEM</button>
         </div>
         <div className="modal__position">
           <TooltipEnem open={openDialog} onClose={handleClose} />

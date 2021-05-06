@@ -15,8 +15,7 @@ const TooltipEnem = ({ open, onClose }) => {
             <div className="text">
               Você pode usar sua <strong>nota do Enem</strong> se fez a prova
               nos <strong>últimos dez anos</strong>. Se você optar pela
-              inscrição através da nota do Enem,{" "}
-              <strong>não precisará realizar o vestibular tradicional.</strong>
+              inscrição através da nota do Enem, <strong>não precisará realizar o vestibular tradicional.</strong>
             </div>
           </div>
         </section>
