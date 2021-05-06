@@ -4,7 +4,7 @@ import styles from "./tooltip-enem-component.style.css";
 
 // eslint-disable-next-line react/prop-types
 const TooltipEnem = ({ open, onClose }) => {
-  const showHideClassName = open ? `modal display-block` : `modal display-none`;
+  const showHideClassName = open ? `modal__enem display-block` : `modal__enem display-none`;
   return (
     <Styled styles={styles}>
       <div className={showHideClassName}>

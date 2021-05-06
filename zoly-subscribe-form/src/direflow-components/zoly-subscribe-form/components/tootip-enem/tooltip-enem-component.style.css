@@ -1,4 +1,4 @@
-.modal {
+.modal__enem {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -15,8 +15,7 @@
 }
 
 .title {
-    display: flex;
-    align-items: flex-start;
+  align-self: flex-start;
   color: #f05a22;
   font-weight: 700;
   font-size: 15px;
@@ -29,22 +28,22 @@
 }
 
 .btn__close::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "X"; 
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    color: #879FAD;
-    margin-top: 8px;
-    margin-right: 12px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "X";
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #879fad;
+  margin-top: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .display-block {
@@ -54,4 +53,3 @@
 .display-none {
   display: none;
 }
-

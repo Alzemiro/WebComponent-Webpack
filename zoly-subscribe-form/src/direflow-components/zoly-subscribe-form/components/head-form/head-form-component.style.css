@@ -11,25 +11,39 @@
 }
 
 .font.text {
-    font-size: 14px;
+    font-size:  1.2rem;
     color: #F05A22;
 }
 
 .btn__container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.item {
-    margin-left: 14px;
+.btn__item {
+    width: 49%;
+    height: 34px;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-weight: bold;
 }
 
-.item:nth-child(1) {
-    margin-left: 0;
-}
+.btn__item:hover {
+    border: 1px solid #f05a22;
+    background-color: #f05a22;
+    color: white;
+  }
+  
+  .btn__item:focus {
+      border: 1px solid #f05a22;
+      background-color: #f05a22;
+      color: white;
+  }
 
 .modal__position{
     position: absolute;
     right: 0;
-    margin-right: 10%;
-
 }
