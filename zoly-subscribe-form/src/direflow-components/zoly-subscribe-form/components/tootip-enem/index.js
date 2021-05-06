@@ -8,17 +8,15 @@ const TooltipEnem = ({ open, onClose }) => {
   return (
     <Styled styles={styles}>
       <div className={showHideClassName}>
-        <section className="modal-main">
         <div className="paper">
         <a onClick={onClose} className="btn__close"></a>
-            <div className="title">Ei, você Sabia Disso?</div>
+            <div className="title">Ei, você sabia disso?</div>
             <div className="text">
               Você pode usar sua <strong>nota do Enem</strong> se fez a prova
               nos <strong>últimos dez anos</strong>. Se você optar pela
               inscrição através da nota do Enem, <strong>não precisará realizar o vestibular tradicional.</strong>
             </div>
           </div>
-        </section>
       </div>
     </Styled>
   );

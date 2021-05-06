@@ -1,9 +1,54 @@
 .modal__gatilho {
-  
+  width: 240px;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.25));
 }
 
+.timer__around {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid #f47921;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.timer__img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal__text {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0em;
+}
+.modal__text.title {
+  font-size: 1rem;
+  line-height: 134.8%;
+  text-align: center;
+  color: #f47921;
+}
+
+.modal__text.text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 134.8%;
+  text-align: center;
+  color: #57585a;
+  padding-bottom: 12px;
+}
+
 .paper {
+  padding: 15%;
   line-height: 1.6;
   background-color: white;
   border-radius: 4px;

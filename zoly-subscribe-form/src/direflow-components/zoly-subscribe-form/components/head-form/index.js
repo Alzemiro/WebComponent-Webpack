@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import TooltipEnem from "../tootip-enem";
 import styles from "./head-form-component.style.css";
 import { Styled } from "direflow-component";
-import TooltipGatilho from "../tooltip-gatilho";
 
 const HeadFormComponent = () => {
   const [btnEnemClick, setEnemClick] = useState(false);
