@@ -23,9 +23,6 @@ const HeadFormComponent = () => {
               {"Como você gostaria de ingressar na Anhanguera?"}
             </h4>
           </div>
-          <div className="modal__position">
-            <TooltipEnem open={openDialog} onClose={handleClose} />
-          </div>
         </div>
         <div className="btn__container">
           <input
@@ -39,6 +36,9 @@ const HeadFormComponent = () => {
             value="NOTA ENEM"
             onClick={handleEnemClick}
           />
+        </div>
+        <div className="modal__position">
+          <TooltipEnem open={openDialog} onClose={handleClose} />
         </div>
       </div>
     </Styled>

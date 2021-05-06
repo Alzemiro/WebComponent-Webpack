@@ -10,6 +10,7 @@ const TooltipEnem = ({ open, onClose }) => {
       <div className={showHideClassName}>
         <section className="modal-main">
         <div className="paper">
+        <a href="#" onClick={onClose} className="btn__close"></a>
             <div className="title">Ei, você Sabia Disso?</div>
             <div className="text">
               Você pode usar sua <strong>nota do Enem</strong> se fez a prova
@@ -18,7 +19,6 @@ const TooltipEnem = ({ open, onClose }) => {
               <strong>não precisará realizar o vestibular tradicional.</strong>
             </div>
           </div>
-         <a href="#" onClick={onClose} className="btn__close"></a>
         </section>
       </div>
     </Styled>

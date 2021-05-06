@@ -11,7 +11,7 @@
 }
 
 .font.text {
-    font-size:  1.2rem;
+    font-size:  1.39rem;
     color: #F05A22;
 }
 
@@ -26,9 +26,10 @@
     height: 34px;
     border-radius: 50px;
     background: transparent;
-    border: 1px solid black;
+    border: 1px solid #57585A;
     box-sizing: border-box;
     font-weight: bold;
+    color: #57585A;
 }
 
 .btn__item:hover {
@@ -44,6 +45,6 @@
   }
 
 .modal__position{
-    position: absolute;
-    right: 0;
+  position: absolute;  
+  transform: translateX(300%);
 }
