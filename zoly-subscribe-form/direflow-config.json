@@ -1,6 +1,6 @@
 {
   "build": {
     "componentPath": "direflow-components",
-    "filename": "zoly-webcomponent-teste-1.js"
+    "filename": "zoly-webcomponent-bundle.js"
   }
 }

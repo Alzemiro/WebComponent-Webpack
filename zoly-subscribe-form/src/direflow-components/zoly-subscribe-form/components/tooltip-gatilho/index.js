@@ -2,7 +2,6 @@ import React from "react";
 import { Styled } from "direflow-component";
 import styles from "./tooltip-gatilho-component.style.css";
 import Timer from "react-compound-timer";
-import ampulheta from "./ampulheta.svg";
 
 // eslint-disable-next-line react/prop-types
 const TooltipGatilho = () => {
@@ -23,7 +22,7 @@ const TooltipGatilho = () => {
           </div>
           <div className="timer__around">
             <div className="time__img">
-            <img src=""/>
+            <img src={"https://storage.googleapis.com/cro_seo-hospedagem_de_assets/Imagens%20Kroton%20-%20Ex%20Maxymiser/anhanguera/SVGS/ampulheta.svg"}/>
             </div>
             <Timer
               initialTime={900000}
