@@ -41,7 +41,6 @@ const HeadFormComponent = () => {
             aria-checked={btnEnemClick}
             className="btn__item enem"
             type="button"
-            id="enem"
             value="NOTA ENEM"
             onClick={handleEnemClick}
           >NOTA ENEM</button>
