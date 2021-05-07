@@ -3,20 +3,34 @@ import TooltipEnem from "../tootip-enem";
 import styles from "./head-form-component.style.css";
 import { Styled } from "direflow-component";
 
+function simulateMouseClick() {
+  const enem = document.getElementById("enem");
+  enem.dispatchEvent(
+    new MouseEvent("click", {
+      view: window,
+      isTrusted: true,
+      bubbles: true,
+      cancelable: true,
+      checked: true,
+    })
+  );
+}
+
 const HeadFormComponent = () => {
   const [btnEnemClick, setEnemClick] = useState(false);
   const [openDialog, setOpenDialog] = useState(false);
-  console.log(btnEnemClick);
-
   const handleClose = () => setOpenDialog(false);
-
+  
   const handleEnemClick = () => {
     setOpenDialog(true);
     setEnemClick(true);
+    simulateMouseClick();
   };
 
   const handleVestibularClick = () => {
+    simulateMouseClick(false);
     setEnemClick(false);
+    simulateMouseClick();
   };
 
   return (
@@ -36,14 +50,18 @@ const HeadFormComponent = () => {
             type="button"
             value="VESTIBULAR ONLINE"
             onClick={handleVestibularClick}
-          >VESTIBULAR ONLINE</button>
+          >
+            VESTIBULAR ONLINE
+          </button>
           <button
             aria-checked={btnEnemClick}
             className="btn__item enem"
             type="button"
             value="NOTA ENEM"
             onClick={handleEnemClick}
-          >NOTA ENEM</button>
+          >
+            NOTA ENEM
+          </button>
         </div>
         <div className="modal__position">
           <TooltipEnem open={openDialog} onClose={handleClose} />
